@@ -116,8 +116,14 @@ class HBNBCommand(cmd.Cmd):
     def emptyline(self):
         """ Overrides the emptyline method of CMD """
         pass
+<<<<<<< HEAD
     def do_create(self, args):
         """ Create an object of any class"""
+=======
+    
+    def do_create(self, args):
+         """ Create an object of any class"""
+>>>>>>> 2ca91f11e9a8a45d3ab2f18f30c7b16959da6803
         ignored_attrs = ('id', 'created_at', 'updated_at', '__class__')
         class_name = ''
         name_pattern = r'(?P<name>(?:[a-zA-Z]|_)(?:[a-zA-Z]|\d|_)*)'
