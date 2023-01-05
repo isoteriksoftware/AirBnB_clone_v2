@@ -116,7 +116,8 @@ class HBNBCommand(cmd.Cmd):
     def emptyline(self):
         """ Overrides the emptyline method of CMD """
         pass
-
+    
+    def do_create(self, args):
     """ Create an object of any class"""
         ignored_attrs = ('id', 'created_at', 'updated_at', '__class__')
         class_name = ''
